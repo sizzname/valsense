@@ -10,9 +10,15 @@ body {
     background-color: #67696a!important;
     color: #fff;
     position: relative;
-    min-height: 860px;
 }
 
+.bg-gray {
+    background-color: #ccc3c9;
+}
+
+.bg-pink {
+    background-color: #cb70a9;
+}
 
 .navbar-container {
     max-width: 1700px;
