@@ -1,0 +1,162 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.bg-dark {
+    background-color: #575757!important;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #67696a!important;
+    color: #fff;
+    position: relative;
+    min-height: 860px;
+}
+
+
+.navbar-container {
+    max-width: 1700px;
+    font-size: 1em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #cb70a9;
+}
+.navbar-phone {
+    border-top: 3px solid #cb70a9;
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.i-phone {
+    background-image: url(/img/i-phone.png)
+}
+.i-mobile {
+    background-image: url(/img/i-mobile.png);
+}
+
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 860px;
+    width: 63%;
+    text-align: right;
+    background: url(/img/valsense-gel.jpg) right no-repeat;
+}
+
+.main-image img {
+
+}
+
+.cell-light-grad {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,.1));
+
+}
+
+.cell-light {
+    background-color: rgba(255,255,255,.1);
+}
+
+.text-pink {
+    color: #cb70a9;
+}
+
+.bg-light .text-pink {
+    color: #e89cc5;
+}
+
+ul.vlist {
+    list-style: none;
+}
+
+ul.vlist li::before {
+    content: "\2022";
+    color: #cb70a9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+}
+ul.vlist li {
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.font-lg {
+    font-size: 1.2em;
+}
+
+.btn-primary {
+    background-color: #cb70a9;
+    border-color: #cb70a9;
+    border-radius: 2px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5em 2em;
+}
+
+.btn-primary:hover {
+    background-color: #e89cc5;
+    border-color: #cb70a9;
+}
+
+.btn-secondary {
+    background-color: #e89cc5;
+    border-color: #e89cc5;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    line-height: 1.1em;
+}
+
+.btn-primary:hover {
+    background-color: #e89cc5;
+    border-color: #e89cc5;
+}
+
+.bgarrowlight {
+    background: url(/img/bgarrowlight.svg) center no-repeat;
+    background-size: contain;
+}
+.bgarrowlightd {
+    background: url(/img/bgarrowlightd.svg) 0 50% no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.bgarrowpink {
+    background: url(/img/bgarrowpink.svg) center no-repeat;
+    background-size: contain;
+}
+
+.bgarrowpinkd {
+    background: url(/img/bgarrowpinkd.svg) 0 50% no-repeat;
+    background-size: contain;
+}
+
+.bgarrowlightd span, .bgarrowpinkd span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left: 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.reccomendation-1 {
+    line-height: 2em;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
