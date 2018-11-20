@@ -10,6 +10,7 @@ body {
     background-color: #67696a!important;
     color: #fff;
     position: relative;
+    overflow: hidden;
 }
 
 .bg-gray {
@@ -165,4 +166,32 @@ ul.vlist li {
     line-height: 2.4em;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+}
+
+.metro {
+    background: url(/img/i-metro.png) 0 3px no-repeat;
+    padding-left: 32px;
+}
+
+.photo1 {
+    max-width: 450px;
+}
+
+.photo2 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: url(/img/foto2.jpg) no-repeat;
+    height: 785px;
+    width: 946px;
+}
+
+.slogan {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.2em;
 }
