@@ -195,3 +195,56 @@ ul.vlist li {
     font-weight: 900;
     line-height: 1.2em;
 }
+
+.icon {
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-position: 0 50%;
+    display: block;
+    min-height: 32px;
+    color: #212529;
+    text-decoration: none;
+}
+
+.icon:hover {
+    text-decoration: none;
+    color: #cb70a9;
+}
+
+.icon-phone {
+    background-image: url(/img/i-phone-b.png);
+}
+.icon-mobile {
+    background-image: url(/img/i-mobile-b.png);
+}
+.icon-email {
+    background-image: url(/img/i-email-b.png);
+}
+.icon-instagram {
+    background-image: url(/img/i-instagram-b.png);
+}
+.icon-vk {
+    background-image: url(/img/i-vk-b.png);
+}
+
+@media (max-width: 991.98px) {
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .bgarrowlightd span, .bgarrowpinkd span {
+        padding-left: 0.5em;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+}
