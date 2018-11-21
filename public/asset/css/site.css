@@ -60,9 +60,9 @@ textarea {
 .main-image {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 45%;
     height: 860px;
-    width: 63%;
+    width: 70%;
     text-align: right;
     /*background: url(/img/valsense-gel.jpg) right no-repeat;*/
 }
@@ -233,16 +233,32 @@ ul.vlist li {
     background-image: url(/img/i-vk-b.png);
 }
 
+@media (max-width: 1299.98px) {
+    .hide-1300 {
+        display: none;
+    }
+}
+
 @media (max-width: 1199.98px) {
     .main-image {
-        left: -10%;
+        left: -15%;
+
     }
+
+    .main-image img {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 991.98px) {
 
+    .hide-1300 {
+        display: block;
+    }
+
     .main-image {
-        left: -15%;
+        left: -20%;
     }
 
     h2 {
