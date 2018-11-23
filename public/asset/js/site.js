@@ -14,12 +14,17 @@ $(function(){
             event.preventDefault();
         }
 
-    })
+    });
 
 
-    $('#collapseSertifikaty').collapse({
-        toggle: false
-    })
+    $('.btn-collapse').click(function () {
+        $("#collapseTabs .collapse").removeClass('show');
+        $('.btn-collapse').removeClass('btn-current');
+
+        $(this).addClass('btn-current');
+        var s = $(this).attr('data-target');
+        $(s).addClass('show');
+    });
     
     
-})
+});

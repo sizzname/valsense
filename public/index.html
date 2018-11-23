@@ -42,10 +42,10 @@
 
                 </ul>
                 <div class="py-3 font-weight-bold navbar-phone i-phone">
-                    <a href="callto:+74951501706" class="text-white text-nowrap">+7 (495) 150-17-06</a>
+                    <a href="tel:+74951501706" class="text-white text-nowrap">+7 (495) 150-17-06</a>
                 </div>
                 <div class="py-3 ml-lg-4 font-weight-bold navbar-phone i-mobile">
-                    <a href="callto:*1706" class="text-white text-nowrap">*1706 Горячая линия</a>
+                    <a href="tel:*1706" class="text-white text-nowrap">*1706 Горячая линия</a>
                 </div>
             </div>
         </div>
@@ -311,37 +311,79 @@
         <div class="container">
             <h4 class="font-weight-bold text-center mb-5">Валсенс, интимный гель для устранения сухости и возвращения чувствительности, 30 мл.</h4>
             <div class="row ry-3">
-                <div class="col-6">
-                    <img src="/img/valsense.jpg" alt="">
+                <div class="col-4 col-md-6">
+                    <img src="/img/valsense.jpg" alt="" class="w-100">
                 </div>
-                <div class="col-6">
-                    <form>
+                <div class="col-8 col-md-6">
+                    <form class="">
+                        <div class="form-group row">
+                            <label for="orderPrice" class="col-sm-4 col-md-3 col-form-label">Цена</label>
+                            <div class="col-sm-8 col-md-9 font-weight-bold font-lg">
+                                <input type="number" readonly class="form-control-plaintext text-white d-inline w-25 text-right font-weight-bold " id="orderPrice" value="990"> руб.
+                            </div>
+                        </div>
 
+                        <div class="form-group row">
+                            <label for="orderCount" class="col-sm-4 col-md-3 col-form-label">Количество</label>
+                            <div class="col-sm-8 col-md-9 font-weight-bold font-lg">
+                                <input type="number" class="form-control d-inline w-25 text-right font-weight-bold" id="orderCount" value="2" aria-describedby="orderCountHelp"> шт.
+                                <small id="orderCountHelp" class="form-text text-white">
+                                    На курс лечения необходимо 2 шт.
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-5">
+                            <label for="orderSaleCode" class="col-sm-4 col-md-3 col-form-label">Код на скидку</label>
+                            <div class="col-sm-8 col-md-9">
+                                <input type="text" class="form-control d-inline w-25 text-right font-weight-bold font-weight-bold font-lg" id="orderSaleCode" value="">
+                                <a href="#" class="text-pink">применить</a>
+                            </div>
+                        </div>
+
+                        <hr class="border-white">
+
+                        <div class="form-group row font-lg mt-4">
+                            <label for="orderTotal" class="col-sm-4 col-md-3 col-form-label font-weight-bold font-lg">Итого</label>
+                            <div class="col-sm-8 col-md-9 font-weight-bold font-lg">
+                                <input type="number" class="form-control-plaintext d-inline w-25 text-right font-weight-bold text-white" id="orderTotal" value="1980"> руб.
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-sm-4 col-md-3"></div>
+                            <div class="col-sm-8 col-md-9">
+                                <input type="submit" class="btn btn-primary text-uppercase" value="Заказать">
+                            </div>
+                        </div>
 
                     </form>
                 </div>
             </div>
-            <div class="row py-3">
-                <div class="col-3">
-                    <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseSertifikaty" type="button" aria-expanded="true" aria-controls="collapseSertifikaty">Сертификаты</button>
+            <div class="row py-3 mt-5">
+                <div class="col-6 col-md-3">
+                    <button class="btn btn-collapse btn-current" data-target="#collapseSertifikaty" type="button" >Сертификаты</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapseDostavka" type="button" aria-expanded="false" aria-controls="collapseDostavka">Доставка</button>
+                <div class="col-6 col-md-3">
+                    <button class="btn btn-collapse" data-target="#collapseDostavka" type="button">Доставка</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapseVozvrat" type="button" aria-expanded="false" aria-controls="collapseVozvrat">Возврат</button>
+                <div class="col-6 col-md-3 mt-3 mt-md-0">
+                    <button class="btn btn-collapse" data-target="#collapseVozvrat" type="button">Возврат</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapseRekvizity" type="button" aria-expanded="false" aria-controls="collapseRekvizity">Реквизиты</button>
+                <div class="col-6 col-md-3 mt-3 mt-md-0">
+                    <button class="btn btn-collapse" data-target="#collapseRekvizity" type="button">Реквизиты</button>
                 </div>
             </div>
             <div class="row py-3 px-4" id="collapseTabs">
 
-                <div class="collapse show" id="collapseSertifikaty" data-parent="#collapseTabs">
-                    Сертификаты
+                <div class="collapse show w-100" id="collapseSertifikaty">
+                    <div class="text-center">
+                        <a href="/img/cert1.jpg" target="_blank"><img src="/img/cert1.jpg" alt="" class="p-4"></a>
+                        <a href="/img/cert1.jpg" target="_blank"><img src="/img/cert2.jpg" alt="" class="p-4"></a>
+                    </div>
                 </div>
 
-                <div class="collapse" id="collapseDostavka" data-parent="#collapseTabs">
+                <div class="collapse" id="collapseDostavka">
                     <p>Доставка товара осуществляется курьером (по Москве и новой Москве) и почтой по России и странам СНГ</p>
                     <ul class="vlist">
                         <li>Стоимость доставки курьером 250 рублей, срок доставки 1-2 дня с момента заказа. При заказе курса (2 упаковки) доставка бесплатно. Стоимость и срок доставки почтой согласно условиям почтового оператора.</li>
@@ -351,13 +393,13 @@
                     <p>Способы оплаты: наличными курьеру или банковской картой на сайте.</p>
                 </div>
 
-                <div class="collapse" id="collapseVozvrat" data-parent="#collapseTabs">
+                <div class="collapse" id="collapseVozvrat">
                     <p>Парфюмерно-косметические товары входят в перечень непродовольственных товаров, утвержденный Постановлением Правительства РФ № 55 от 19.01.08 г., не подлежащих возврату или обмену: п. 3. парфюмерно-косметические средства.</p>
                     <p>По ст. 18 З-на «О защите прав потребителей» право Покупателя на возврат уплаченных за товар денежных средств, обмен товара подлежат удовлетворению только в случаях наличия в товаре недостатков, возникших по вине продавца/производителя. Если после оплаты заказа Вы обнаружили несоответствие (брак), Вам необходимо связаться с менеджером магазина по почте info@miramedica.org с указанием номера заказа, описанием сути проблемы, фото для подтверждения наличия проблемы.</p>
                     <p>После рассмотрения Вашего обращения наш сотрудник свяжется с Вами и согласует дальнейшие действия.</p>
                 </div>
 
-                <div class="collapse" id="collapseRekvizity" data-parent="#collapseTabs">
+                <div class="collapse" id="collapseRekvizity">
                     <p>Общество с ограниченной ответственностью «МИРАМЕДИКА»</p>
                     <p>Юридический и фактический адрес: 119285, г. Москва, Воробьевское шоссе д.6, помещение 1</p>
                     <p>Тел.: +7 (495) 150-17-06</p>
@@ -417,21 +459,23 @@
                     <h2 class="font-weight-bold mb-3">Форма обратной связи</h2>
                     <p class="mb-5">Остались вопросы? Мы готовы ответить на них!</p>
                     <form>
-                        <div class="row">
-                            <div class="col-4 py-1 py-md-3">Ваше имя<span class="text-pink">*</span></div>
-                            <div class="col-8 py-1 py-md-3"><input type="text" name="" id="" class="form-control"></div>
+                        <div class="form-group row">
+                            <label class="col-4 py-1 py-md-3 col-form-label" for="contactFormName">Ваше имя<span class="text-pink">*</span></label>
+                            <div class="col-8 py-1 py-md-3">
+                                <input type="text" name="name" id="contactFormName" class="form-control">
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-4 py-1 py-md-3">E-mail<span class="text-pink">*</span></div>
-                            <div class="col-8 py-1 py-md-3"><input type="text" name="" id="" class="form-control"></div>
+                            <label class="col-4 py-1 py-md-3 col-form-label" for="contactFormEmail">E-mail<span class="text-pink">*</span></label>
+                            <div class="col-8 py-1 py-md-3"><input type="text" name="email" id="contactFormEmail" class="form-control"></div>
                         </div>
                         <div class="row">
-                            <div class="col-4 py-1 py-md-3">Сообщение<span class="text-pink">*</span></div>
-                            <div class="col-8 py-1 py-md-3"><textarea class="form-control"></textarea></div>
+                            <label class="col-4 py-1 py-md-3 col-form-label" for="contactFormText">Сообщение<span class="text-pink">*</span></label>
+                            <div class="col-8 py-1 py-md-3"><textarea class="form-control" name="text" id="contactFormText"></textarea></div>
                         </div>
                         <div class="row">
                             <div class="col-4 py-1 py-md-3"></div>
-                            <div class="col-8 py-1 py-md-3"><input type="checkbox"> Я даю согласие на обработку моих персональных данных</div>
+                            <div class="col-8 py-1 py-md-3"><input type="checkbox" name="agree" id="contactFormAgree"> <label for="contactFormAgree" class="d-inline">Я даю согласие на обработку моих персональных данных</label></div>
                         </div>
                         <div class="row">
                             <div class="col-4 py-3"></div>
