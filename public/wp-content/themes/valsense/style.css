@@ -1,0 +1,378 @@
+/*
+Theme Name: Valsense
+Theme URI: https://valsense.ru/
+Author: Denis Anikin
+Description: Theme for valsense.ru
+Version: 1.0
+*/
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+button, .btn, input, textarea, select {
+    border-radius: 0!important;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.bg-dark {
+    background-color: #575757!important;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #67696a!important;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-gray {
+    background-color: #f0f0f0;
+}
+
+.bg-pink {
+    background-color: #cb70a9;
+}
+
+.navbar-container {
+    max-width: 1700px;
+    font-size: 1em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #cb70a9;
+}
+.navbar-phone {
+    border-top: 3px solid #cb70a9;
+    background:  20px 15px no-repeat;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.i-phone {
+    background-image: url(img/i-phone.png)
+}
+.i-mobile {
+    background-image: url(img/i-mobile.png);
+}
+
+.main-image {
+    position: absolute;
+    top: 0;
+    right: 45%;
+    height: 860px;
+    width: 70%;
+    text-align: right;
+}
+
+.main-image img {
+
+}
+
+.cell-light-grad {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,.1));
+
+}
+
+.cell-light {
+    background-color: rgba(255,255,255,.1);
+}
+
+.text-pink {
+    color: #cb70a9;
+}
+
+.bg-light .text-pink {
+    color: #e89cc5;
+}
+
+ul.vlist {
+    list-style: none;
+}
+
+ul.vlist li::before {
+    content: "\2022";
+    color: #cb70a9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+}
+ul.vlist li {
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.font-lg {
+    font-size: 1.2em;
+}
+
+.btn-primary {
+    background-color: #cb70a9;
+    border-color: #cb70a9;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5em 2em;
+}
+
+.btn-primary:hover {
+    background-color: #e89cc5;
+    border-color: #cb70a9;
+}
+
+.btn-secondary {
+    background-color: #e89cc5;
+    border-color: #e89cc5;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    line-height: 1.1em;
+}
+
+.btn-primary:hover {
+    background-color: #e89cc5;
+    border-color: #e89cc5;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #e89cc5;
+    border-color: #cb70a9;
+}
+
+
+.btn-collapse {
+    background-color: #505050;
+    border-color: #505050;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #fff;
+    width: 100%;
+    font-size: 1.1em;
+    transition: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.btn-collapse:hover {
+    transition: none;
+}
+
+.btn-current {
+    background-color: #cb70a9;
+    border-color: #cb70a9;
+}
+
+.bgarrowlight {
+    background: url(img/bgarrowlight.svg) center no-repeat;
+    background-size: contain;
+}
+.bgarrowlightd {
+    background: url(img/bgarrowlightd.svg) 0 50% no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.bgarrowpink {
+    background: url(img/bgarrowpink.svg) center no-repeat;
+    background-size: contain;
+}
+
+.bgarrowpinkd {
+    background: url(img/bgarrowpinkd.svg) 0 50% no-repeat;
+    background-size: contain;
+}
+
+.bgarrowlightd span, .bgarrowpinkd span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left: 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.reccomendation-1 {
+    line-height: 2.4em;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.metro {
+    background: url(img/i-metro.png) 0 3px no-repeat;
+    padding-left: 32px;
+}
+
+.photo1 {
+    max-width: 450px;
+}
+
+.photo2 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: url(img/foto2.jpg) no-repeat;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+.slogan {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+
+.icon {
+    background: 0 50% no-repeat;
+    padding-left: 40px;
+    display: block;
+    min-height: 32px;
+    color: #212529;
+    text-decoration: none;
+}
+
+.icon:hover {
+    text-decoration: none;
+    color: #cb70a9;
+}
+
+.icon-phone {
+    background-image: url(img/i-phone-b.png);
+}
+.icon-mobile {
+    background-image: url(img/i-mobile-b.png);
+}
+.icon-email {
+    background-image: url(img/i-email-b.png);
+}
+.icon-instagram {
+    background-image: url(img/i-instagram-b.png);
+}
+.icon-vk {
+    background-image: url(img/i-vk-b.png);
+}
+
+.icon-email-w {
+    background-image: url(img/i-email-w.png);
+    background-position-x: 2px;
+}
+.icon-instagram-w {
+    background-image: url(img/i-instagram-w.png);
+    background-position-x: 4px;
+}
+.icon-vk-w {
+    background-image: url(img/i-vk-w.png);
+}
+
+.form-group small {
+    font-style: italic;
+    color: #d9d9d9 !important;
+}
+
+.panel-soc {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 64px;
+}
+
+.woocommerce-privacy-policy-link, .woocommerce-terms-and-conditions-link {
+    color: #e89cc5;
+}
+.woocommerce-privacy-policy-link:hover, .woocommerce-terms-and-conditions-link:hover {
+    color: #cb70a9;
+}
+
+#contactFormText {
+    max-height: 150px!important;
+}
+
+@media (max-width: 1300px) {
+    .hide-1300 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-image {
+        left: -15%;
+
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .hide-1300 {
+        display: block;
+    }
+
+    .main-image {
+        left: -20%;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .bgarrowlightd span, .bgarrowpinkd span {
+        padding-left: 0.5em;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    h1 img {
+        width: 100%!important;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    input.w-25 {
+        width: 50%!important;
+    }
+
+}
